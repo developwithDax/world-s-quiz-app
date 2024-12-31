@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h1 class="animated-heading">World's Capital Quiz </h1>
+    <div id="question" class="question-container"></div>
+    <ul class="options"></ul>
+    <button class="btn" id="next-btn">Next</button>
+    <button class="btn exit-btn" id="exit-btn">Exit</button>
+  </div>
+  <div class="quiz-container hidden" id="result">
+    <h1>Quiz Results</h1>
+    <p id="score"></p>
+    <p id="correct-answers"></p>
+    <p id="wrong-answers"></p>
+    <button class="btn" id="restart-btn">Restart</button>
+  </div>
+  <script src="quiz.js"></script>
+</body>
+</html>

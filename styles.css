@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    background-image: url("/images/cities_image.jpg");
+    background-size: cover;
+  }
+  
+  .quiz-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .quiz-container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animated Heading */
+  .animated-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: darkolivegreen;
+    overflow: hidden;
+    position: relative;
+    animation: slideIn 2s ease-out;
+    text-transform: uppercase;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design for Heading */
+  @media (max-width: 768px) {
+    .animated-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .animated-heading {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Question Container */
+  .question-container {
+    margin-bottom: 1rem;
+  }
+  
+  /* Options */
+  .options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .option {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .option:hover {
+    background: #0056b3;
+  }
+  
+  .option:active {
+    transform: scale(0.98);
+  }
+  
+  /* Buttons */
+  .btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #218838;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Exit Button Styling */
+  .exit-btn {
+    background: #dc3545;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+  }
+  
+  .exit-btn:hover {
+    background: #a71d2a;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
